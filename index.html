@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>OrientDig spreadsheet – dansk guide til produktlinks og QC</title>
+  <meta name="description" content="Brug et OrientDig spreadsheet til at finde sko, tøj og accessories. Sammenlign produktlinks, QC-billeder, størrelser og den samlede pris til Danmark.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="OrientDig spreadsheet – dansk guide til produktlinks og QC">
+  <meta property="og:description" content="Se kategorierne, og få en dansk tjekliste til produktlinks, QC-billeder, størrelser og fragt.">
+  <meta property="og:image" content="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png">
+  <meta property="og:image:alt" content="Hvid Nike Air Force 1 ’07">
+  <link rel="preconnect" href="https://static.nike.com">
+  <!--
+    Bing viste ingen relevante resultater for den præcise søgning.
+    Emneanalysen bygger derfor på ti domæner fundet via supplerende websøgning:
+    orientdigglobal.com, orientdigi.com, orientdig.net, orientdigs.com,
+    orientdigsheets.org, orientdig-sheet.com, repsheet.net, spreadsheet-orientdig.com,
+    qcradar.com og orientdigspreadsheet.net.
+    Sekundære søgeord: OrientDig produktlinks, OrientDig QC-billeder,
+    OrientDig størrelsesguide og OrientDig fragt til Danmark.
+  -->
+  <style>
+    :root{color-scheme:light;--paper:#f6f1ea;--ink:#231c29;--plum:#38213f;--gold:#f2bb70;--line:#d9ced8;--white:#fffdfa}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:inherit}
+    a:focus-visible,summary:focus-visible{outline:3px solid #9b3e00;outline-offset:4px}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.15;overflow-wrap:break-word}
+    h2{font-size:clamp(1.45rem,3vw,2.15rem);letter-spacing:-.025em}
+    h3{font-size:1.12rem}
+    p+p,h2+p,h3+p{margin-top:.65rem}
+    .wrap{width:min(100% - 2rem,69rem);margin-inline:auto}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:.65rem;flex-wrap:wrap;padding:.9rem 0}
+    .brand{font-size:1.15rem;font-weight:850;text-underline-offset:.2em}
+    .label{font-size:.78rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+    .categories{border-block:1px solid var(--line);background:var(--white);padding:.85rem 0 1rem}
+    .categories ul{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.4rem;margin:.45rem 0 0;padding:0;list-style:none}
+    .categories a{display:flex;align-items:center;gap:.45rem;min-height:3rem;padding:.35rem .5rem;border:1px solid var(--line);border-radius:.4rem;text-decoration:none;font-size:.86rem;font-weight:700;line-height:1.25;overflow-wrap:anywhere}
+    .categories span{color:#674768;font-size:.72rem;flex:none}
+    .categories a:hover,.categories a:focus-visible{background:#f3e7f1;text-decoration:underline}
+    .hero{display:grid;grid-template-columns:1.35fr 1fr;overflow:hidden;background:var(--plum);color:var(--white);border-radius:1.2rem;margin-top:1.35rem}
+    .intro{align-self:center;padding:clamp(1.3rem,5vw,3.2rem)}
+    .intro .label{color:var(--gold)}
+    h1{margin:.55rem 0 .9rem;font-size:clamp(2.15rem,5.3vw,4.6rem);letter-spacing:-.055em}
+    .intro p{max-width:52ch}
+    .button{display:inline-flex;align-items:center;min-height:44px;margin-top:1rem;padding:.6rem .95rem;border-radius:.4rem;background:var(--gold);color:var(--ink);font-weight:800;text-decoration:none}
+    .button:hover{text-decoration:underline}
+    .button:focus-visible{outline-color:#fff}
+    .hero figure{display:grid;grid-template-rows:1fr auto;background:#e9e4e4;color:var(--ink)}
+    .hero img{display:block;width:100%;height:100%;min-height:0;max-height:24rem;aspect-ratio:4/3;object-fit:contain}
+    figcaption{padding:.55rem .75rem;font-size:.82rem}
+    .section{margin-top:clamp(1.8rem,5vw,3.4rem)}
+    .lede{max-width:70ch}
+    .desk{display:grid;grid-template-columns:2fr 1fr;gap:1.1rem;align-items:start}
+    .notes{display:grid;gap:.85rem;margin-top:.9rem}
+    .notes article,.check{background:var(--white);border:1px solid var(--line);border-radius:.7rem;padding:1rem}
+    .check{border-top:5px solid var(--plum)}
+    .check ol{padding-left:1.35rem;margin:.75rem 0 0}
+    .check li+li{margin-top:.65rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem;margin-top:.85rem}
+    .gallery figure{overflow:hidden;border:1px solid var(--line);border-radius:.65rem;background:var(--white)}
+    .gallery img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#f4efee}
+    .faq{max-width:52rem}
+    details{border-bottom:1px solid var(--line)}
+    details:first-of-type{margin-top:.8rem;border-top:1px solid var(--line)}
+    summary{padding:.85rem .15rem;cursor:pointer;font-weight:750}
+    details p{padding:0 .15rem .95rem}
+    footer{margin-top:2.25rem;padding:1.15rem 0;border-top:1px solid var(--line);font-size:.9rem}
+    @media(max-width:53rem){.categories ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:42rem){.hero,.desk{grid-template-columns:1fr}.hero img{max-height:18rem}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:30rem){.categories ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "OrientDig spreadsheet – dansk guide til produktlinks og QC",
+    "inLanguage": "da",
+    "mainEntity": [
+      {"@type":"Question","name":"Hvad er et OrientDig spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det er en oversigt over produktlinks, ofte med kategorier, billeder og korte noter. Brug den til at finde kandidater og kontrollér de aktuelle oplysninger på produktsiden."}},
+      {"@type":"Question","name":"Hvordan bruger jeg OrientDig QC-billeder?","acceptedAnswer":{"@type":"Answer","text":"Sammenhold billederne med den valgte model, farve og størrelse. Bed om tydelige fotos af de detaljer, du mangler. Billeder alene kan ikke bekræfte ægthed."}},
+      {"@type":"Question","name":"Hvordan vælger jeg størrelse på sko og tøj?","acceptedAnswer":{"@type":"Answer","text":"Sammenlign skoens indvendige mål eller tøjets mål i centimeter med et par sko eller et stykke tøj, der allerede passer dig."}},
+      {"@type":"Question","name":"Hvad skal jeg regne med ved fragt til Danmark?","acceptedAnswer":{"@type":"Answer","text":"Læg varepris, relevante gebyrer, fragt og eventuelle importomkostninger sammen i DKK. Brug den aktuelle fragtberegning for den valgte leveringsmetode, vægt og pakkestørrelse."}},
+      {"@type":"Question","name":"Hvor fører kategorilinkene hen?","acceptedAnswer":{"@type":"Answer","text":"De åbner de tilsvarende kategorier på CAFANS. Hovedknappen åbner forsiden på CAFANS."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/vviym/">
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+      <span class="label">Dansk indkøbsguide</span>
+    </div>
+    <nav class="categories" aria-label="Produktkategorier på CAFANS">
+      <div class="wrap">
+        <p class="label">Vælg en kategori på CAFANS</p>
+        <ul>
+          <li><a href="https://cafans.com/category-911-Shoes.html" aria-label="Shoes – sko"><span aria-hidden="true">01</span> Shoes</a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html" aria-label="Hoodies/Sweaters – hættetrøjer og trøjer"><span aria-hidden="true">02</span> Hoodies/Sweaters</a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html"><span aria-hidden="true">03</span> T-Shirts</a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html" aria-label="Jackets – jakker"><span aria-hidden="true">04</span> Jackets</a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html" aria-label="Pants/Shorts – bukser og shorts"><span aria-hidden="true">05</span> Pants/Shorts</a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html" aria-label="Headwear – hovedbeklædning"><span aria-hidden="true">06</span> Headwear</a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html" aria-label="Sets – tøjsæt"><span aria-hidden="true">07</span> Sets</a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html" aria-label="Underwear/underpants – undertøj"><span aria-hidden="true">08</span> Underwear/underpants</a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html" aria-label="Jersey – sportstrøjer"><span aria-hidden="true">09</span> Jersey</a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html" aria-label="Accessories – tilbehør"><span aria-hidden="true">10</span> Accessories</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="label">Produktlinks · størrelser · fragt</p>
+        <h1 id="page-title">OrientDig spreadsheet</h1>
+        <p>Et OrientDig spreadsheet er en oversigt over produktlinks, ofte med billeder og korte noter. Start med en kategori, vælg to eller tre kandidater, og sammenlign deres mål, QC-billeder og samlede pris.</p>
+        <a class="button" href="https://www.cafans.com">Åbn CAFANS</a>
+      </div>
+      <figure>
+        <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png" width="1070" height="1338" alt="Hvid Nike Air Force 1 ’07 med hvid sål" fetchpriority="high" loading="eager">
+        <figcaption>Stilreference · Nike Air Force 1 ’07</figcaption>
+      </figure>
+    </section>
+    <section class="section desk" aria-labelledby="guides-title">
+      <div>
+        <h2 id="guides-title">Fra produktlink til kortliste</h2>
+        <p class="lede">Skriv den valgte variant, prisen og datoen ned for hver vare. Det gør det lettere at se, om noget har ændret sig, når du åbner linket igen.</p>
+        <div class="notes">
+          <article>
+            <h3>01 · OrientDig produktlinks og varianter</h3>
+            <p>Åbn produktlinket, og sammenhold varenavn, modelnummer og farvevariant med rækken i regnearket. På en side fra Weidian, Taobao eller 1688 kan samme opslag dække flere udgaver. Kontrollér lagerstatus for netop din størrelse, og se efter sælgerens returvilkår.</p>
+          </article>
+          <article>
+            <h3>02 · OrientDig QC-billeder og størrelsesguide</h3>
+            <p>Brug QC-billeder, altså billeder til kvalitetskontrol, til at se detaljer på den valgte variant. Til sneakers er sålmønster, hælkappe og indvendig længde værd at sammenligne. Til en hættetrøje er brystbredde, ærmelængde og manchetter nyttige. På bukser kan du bruge taljemål og indvendig benlængde.</p>
+            <p>Ved en kasket giver hovedomkreds og et foto af spændet mere at gå efter. Ved smykker kan du bede om billeder af låsen og et foto med lineal, så størrelsen er tydelig.</p>
+          </article>
+          <article>
+            <h3>03 · OrientDig fragt til Danmark</h3>
+            <p>Notér vareprisen i CNY og omregn til danske kroner med samme kurs, når du sammenligner. Spørg efter pakkens mål og faktiske vægt, og se om fragtlinjen bruger volumenvægt. En skotøjsæske kan ændre pakkemålet. Medregn relevante gebyrer og eventuelle importomkostninger i din samlede pris i DKK.</p>
+          </article>
+        </div>
+      </div>
+      <aside class="check" aria-labelledby="check-title">
+        <h2 id="check-title">Fire ting at gemme</h2>
+        <ol>
+          <li><strong>Varelink og dato.</strong> Gem den produktside, du faktisk har åbnet.</li>
+          <li><strong>Farve og størrelse.</strong> Notér variantkoden, hvis den fremgår.</li>
+          <li><strong>Mål og billeder.</strong> Skriv, hvilke mål eller fotovinkler du stadig mangler.</li>
+          <li><strong>Pris til levering.</strong> Gem fragtoverslaget sammen med beløbet og valutaen.</li>
+        </ol>
+      </aside>
+    </section>
+    <section class="section" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Detaljer at se efter</h2>
+      <p class="lede">Billederne er stilreferencer. Brug dem som inspiration til de detaljer, du vil se på en konkret vare.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=400&amp;wid=400" width="400" height="400" alt="Blå Louis Vuitton-denimjakke med monogram og brystlommer" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · Se på stikninger og lommeplacering.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Gucci-kasket i beige og brunt GG-lærred" loading="lazy" decoding="async">
+          <figcaption>Gucci · Tjek skyggens form og justeringen bagpå.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn-images.buyma.com/imgdata/item/230623/0096172726/549978861/org.jpg" width="800" height="800" alt="Hermès Carré 90 Planifleurs-tørklæde med blomstermotiv" loading="lazy" decoding="async">
+          <figcaption>Hermès · Bed om et nærbillede af tørklædets kant.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/LOOK_F_24_1_LOOK_211_E08?%24lookDefault_GH-GHC%24=&amp;bfc=on&amp;crop=568%2C0%2C1858%2C2000&amp;qlt=80&amp;wid=400" width="400" height="431" alt="Dior Petit CD Mini-ørestikker med guldfinish og lyse krystaller på en model" loading="lazy" decoding="async">
+          <figcaption>Dior · Se efter mål og fotos af ørestikkernes bagside.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Spørgsmål og svar</h2>
+      <details open>
+        <summary>Hvad er et OrientDig spreadsheet?</summary>
+        <p>Det er en oversigt over produktlinks, ofte med kategorier, billeder og korte noter. Brug den til at finde kandidater og kontrollér de aktuelle oplysninger på produktsiden.</p>
+      </details>
+      <details>
+        <summary>Hvordan bruger jeg OrientDig QC-billeder?</summary>
+        <p>Sammenhold billederne med den valgte model, farve og størrelse. Bed om tydelige fotos af de detaljer, du mangler. Billeder alene kan ikke bekræfte ægthed.</p>
+      </details>
+      <details>
+        <summary>Hvordan vælger jeg størrelse på sko og tøj?</summary>
+        <p>Sammenlign skoens indvendige mål eller tøjets mål i centimeter med et par sko eller et stykke tøj, der allerede passer dig.</p>
+      </details>
+      <details>
+        <summary>Hvad skal jeg regne med ved fragt til Danmark?</summary>
+        <p>Læg varepris, relevante gebyrer, fragt og eventuelle importomkostninger sammen i DKK. Brug den aktuelle fragtberegning for den valgte leveringsmetode, vægt og pakkestørrelse.</p>
+      </details>
+      <details>
+        <summary>Hvor fører kategorilinkene hen?</summary>
+        <p>De åbner de tilsvarende kategorier på CAFANS. Hovedknappen åbner forsiden på CAFANS.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Uafhængig indkøbsguide om produktlinks. Mærkebillederne er stilreferencer og viser ikke lagerstatus hos CAFANS.</p>
+    </div>
+  </footer>
+</body>
+</html>
